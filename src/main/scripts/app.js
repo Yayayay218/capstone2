@@ -6,16 +6,50 @@ bmcApp.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
     // HOME STATES AND NESTED VIEWS ========================================
-
         .state('home', {
             url: '/home',
             views: {
-                'header@': {
+                'header': {
                     templateUrl: 'scripts/components/header/header.html'
                 },
 
-                'footer@': {
+                'content': {
+                    templateUrl: 'scripts/product/home-page.html'
+                },
+
+                'footer': {
                     templateUrl: 'scripts/components/footer/footer.html'
+                }
+            }
+        })
+
+        // COLLECTIONS PAGE
+        .state('home.collections', {
+            url: '/collections',
+            views: {
+                'content@': {
+                    templateUrl: 'scripts/product/collections.html'
+                }
+            }
+
+        })
+
+        // COLLECTION-DETAILS PAGE
+        .state('home.collections.collection-details', {
+            url: '/collection-details',
+            views: {
+                'content@': {
+                    templateUrl: 'scripts/product/collection-details.html'
+                }
+            }
+        })
+
+        //  PRODUCT-DETAILS PAGE
+        .state('home.collections.collection-details.product-details', {
+            url: '/product-details',
+            views: {
+                'content@': {
+                    templateUrl: 'scripts/product/product-details.html'
                 }
             }
         })
