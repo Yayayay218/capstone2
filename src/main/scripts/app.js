@@ -14,7 +14,8 @@ bmcApp.config(function ($stateProvider, $urlRouterProvider) {
                 },
 
                 'footer': {
-                    templateUrl: 'scripts/components/footer/footer.html'
+                    templateUrl: 'scripts/components/footer/footer.html',
+                    controller: 'footerCtrl'
                 }
             }
         });

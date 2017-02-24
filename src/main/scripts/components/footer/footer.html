@@ -5,30 +5,19 @@
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> quick links </h3>
                     <ul>
-                        <li><a href="#"> About Us</a></li>
-                        <li><a href="#"> How to Buy </a></li>
-                        <li><a href="#"> Support </a></li>
-                        <li><a href="#"> Press / Blog </a></li>
-                        <li><a href="#"> Contact Us </a></li>
+                        <li ng-repeat="link in quickLinks"><a href="#"> {{link}}</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> products </h3>
                     <ul>
-                        <li><a href="#"> Popular</a></li>
-                        <li><a href="#"> Trending </a></li>
-                        <li><a href="#"> Catalog </a></li>
-                        <li><a href="#"> Features </a></li>
+                        <li ng-repeat="trend in trends"><a href="#"> {{trend}}</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4  col-md-2 col-sm-4 col-xs-12">
                     <h3> popular categories </h3>
                     <ul>
-                        <li><a href="#"> Chair Lounges </a></li>
-                        <li><a href="#"> Dining Tables </a></li>
-                        <li><a href="#"> Outdoor Benches </a></li>
-                        <li><a href="#"> Patio Furniture </a></li>
-                        <li><a href="#"> Sofas and Loveseats </a></li>
+                        <li ng-repeat="item in popularCate"><a href="#"> {{item}} </a></li>
                     </ul>
                 </div>
 

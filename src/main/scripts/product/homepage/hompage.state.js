@@ -8,7 +8,8 @@ angular.module('bmcApp')
                 parent: 'home',
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/product/homepage/home-page.html'
+                        templateUrl: 'scripts/product/homepage/home-page.html',
+                        controller: 'homePageCtrl'
                     }
                 }
             });
