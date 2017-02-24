@@ -28,8 +28,7 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Canadian Dollar</a></li>
-                                    <li><a href="#">Pound</a></li>
+                                    <li ng-repeat="currency in currencies"><a href="">{{currency}}</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -268,12 +267,7 @@
 
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li>
-                                <a href="#">patio furniture</a>
-                            </li>
-                            <li><a href="#">indoor</a></li>
-                            <li><a href="#">dining room</a></li>
-                            <li><a href="#">outdoor benches</a></li>
+                            <li ng-repeat="category in categories"><a href="">{{category}}</a></li>
                         </ul>
                     </div>
                 </div>
