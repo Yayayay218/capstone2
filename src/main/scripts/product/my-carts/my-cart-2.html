@@ -6,19 +6,18 @@
         <div class="col-lg-8">
             <div class="custom-my-cart">
 
-
                 <h3>My Cart <span>(2 Items)</span></h3>
                 <div class="form-horizontal">
                     <div class="form-group">
-                        <div class="row row-item ">
+                        <div class="row row-item " ng-model="cart">
                             <div class="col-lg-2 col-xs-3 ">
-                                <img class="imgItem" src="assets/img/home/greenchair.jpg">
+                                <img class="imgItem" ng-src="{{cart.img}}">
 
                             </div>
                             <div class="col-lg-5 col-xs-4">
                                 <div class="nameItem">
-                                    <h3>Garden Chairs</h3>
-                                    <p class="des">Althusser Competing Interpellations And The Third Text</p>
+                                    <h3>{{cart.name}}</h3>
+                                    <p class="des">{{cart.description}}</p>
                                 </div>
                                 <div class="remove-icon">
                                     <a href="#"><img src="assets/img/home/remove.svg">&nbspRemove</a>
@@ -27,12 +26,12 @@
                             </div>
                             <div class="col-lg-1 col-xs-2">
                                 <p class="titleRow-left">Price</p>
-                                <p class="price">$200</p>
+                                <p class="price">{{cart.price}}</p>
                             </div>
                             <div class="col-lg-2 col-xs-1">
                                 <p class="titleRow-right">Qty</p>
                                 <div class="input-group spinner pull-right">
-                                    <input type="text" class="form-control" value="1">
+                                    <input type="text" class="form-control" value="{{cart.quantity}}">
                                     <div class="input-group-btn-vertical">
                                         <button class="btn btn-default" type="button"><i
                                                 class="fa fa-caret-up"></i></button>
@@ -43,10 +42,11 @@
                             </div>
                             <div class="col-lg-2 col-xs-2">
                                 <p class="titleRow-right">Amount</p>
-                                <p class="qty">$200</p>
+                                <p class="qty">{{cart.amount}}</p>
                             </div>
                         </div>
                         <hr/>
+
                         <div class="row row-item ">
                             <div class="col-lg-2 col-xs-3 ">
                                 <img class="imgItem" src="assets/img/home/greenchair.jpg">
@@ -93,13 +93,13 @@
                     <div class="radio-tab">
                         <ul>
                             <li>
-                                <input type="radio" id="f-option" name="selector" checked="checked">
+                                <input type="radio" id="f-option" ng-checked="true" name="selector" ng-model="content" value="true">
                                 <label for="f-option">Already have an account</label>
                                 <div class="check"></div>
                             </li>
 
                             <li>
-                                <input type="radio" id="s-option" name="selector">
+                                <input type="radio" id="s-option" name="selector" ng-model="content" value="false">
                                 <label for="s-option">New Customer</label>
 
                                 <div class="check">
@@ -108,7 +108,31 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="1" style="display: none">
+                    <div ng-hide="content=='false'">
+
+                        <div class="form-group">
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control input" required>
+                                <label class="account">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-6">
+                                <input type="password" class="form-control input" required>
+                                <label class="account">Password</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-6">
+                                <input type="button" class="form-control button" value="LOGIN">
+                                <div style="margin: 15px 0;"></div>
+                                <a href="#" class="forgotPassword">Forgot Password? </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="content=='false'">
                         <div class="form-group">
                             <div class="col-lg-6">
                                 <input type="text" class="form-control input" required>
@@ -185,30 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="2">
 
-                        <div class="form-group">
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input" required>
-                                <label class="account">Email</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-lg-6">
-                                <input type="password" class="form-control input" required>
-                                <label class="account">Password</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-lg-6">
-                                <input type="button" class="form-control button" value="LOGIN">
-                                <div style="margin: 15px 0;"></div>
-                                <a href="#" class="forgotPassword">Forgot Password? </a>
-
-                            </div>
-                        </div>
-                    </div>
 
                     <h3>Special Request / Message</h3>
                     <div class="form-group">

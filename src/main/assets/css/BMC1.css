@@ -363,6 +363,11 @@
 .account .row-item{
     padding: 25px 0px;
 }
+
+.account .row-item .spinner {
+    margin-top: 0;
+}
+
 .account  .imgItem{
     width: 120px;
     height: 120px;
@@ -703,3 +708,7 @@ form-group input[type='email']:focus~label,form-group input[type='email']:valid~
     position: relative;
 }
 
+.radio-rab input {
+    display: none;
+    color: #434343;
+}

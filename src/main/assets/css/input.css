@@ -8,14 +8,14 @@
     margin: 15px 25px;
 }
 
-input {
-    font-size: 15px;
-    display: block;
-    width: 310px;
-    height: 55px;
-    border: solid 1px #9f9f9f;
-    border-radius: 5px;
-}
+/*input {*/
+    /*font-size: 15px;*/
+    /*display: block;*/
+    /*width: 310px;*/
+    /*height: 55px;*/
+    /*border: solid 1px #9f9f9f;*/
+    /*border-radius: 5px;*/
+/*}*/
 
 input:focus {
     outline: none;
@@ -24,12 +24,12 @@ input:focus {
 
 /* LABEL ======================================= */
 label {
-    color: #999;
+    /*color: #999;*/
     font-size: 18px;
     font-weight: normal;
     position: absolute;
-    pointer-events: none;
-    left: 5px;
+    /*pointer-events: none;*/
+    /*left: 5px;*/
     top: 10px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
@@ -40,7 +40,7 @@ label {
 input:focus ~ label, input:valid ~ label {
     top: -1px;
     font-size: 13px;
-    color: #434343;
+    /*color: #434343;*/
 }
 
 /* BOTTOM BARS ================================= */

@@ -1,6 +1,7 @@
 'use strict';
 
 var bmcApp = angular.module('bmcApp', ['ui.router']);
+
 bmcApp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 

@@ -108,15 +108,6 @@ $(document).ready(function(){
         }
     });
 
-    $('#s-option').on('click', function () {
-        $('#1').show();
-        $('#2').hide();
-    });
-    $('#f-option').on('click', function () {
-        $('#2').show();
-        $('#1').hide();
-    });
-
 });
 
 /**/

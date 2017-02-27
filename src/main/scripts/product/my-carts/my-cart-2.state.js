@@ -10,7 +10,8 @@ angular.module('bmcApp')
                 parent: 'home',
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/product/my-carts/my-cart-2.html'
+                        templateUrl: 'scripts/product/my-carts/my-cart-2.html',
+                        controller: 'myCart2Ctrl'
                     }
                 }
             });
