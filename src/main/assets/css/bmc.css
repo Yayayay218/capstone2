@@ -6,6 +6,7 @@
 @import url("parallax-slider.css");
 @import url("hero-image.css");
 @import url("social-icons.css");
+@import url("BMC1.css");
 
 body {
     font-family: 'Lato', sans-serif;
@@ -933,3 +934,6 @@ a:hover {
     border: solid 2px #ff9948;
 }
 
+.custom-my-cart .form-control {
+    width: 100%;
+}

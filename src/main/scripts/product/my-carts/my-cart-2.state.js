@@ -5,13 +5,12 @@ angular.module('bmcApp')
 
         $stateProvider
 
-            .state('home-page', {
-                url: '/',
+            .state('myCart2', {
+                url: '/check-out',
                 parent: 'home',
                 views: {
                     'content@': {
-                        templateUrl: 'scripts/product/homepage/home-page.html',
-                        controller: 'homePageCtrl'
+                        templateUrl: 'scripts/product/my-carts/my-cart-2.html'
                     }
                 }
             });

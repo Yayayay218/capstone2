@@ -10,4 +10,5 @@ angular.module('bmcApp')
             img: '',
             button: 'request a quote'
         };
+
     });
